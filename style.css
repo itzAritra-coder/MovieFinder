@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: rgb(198, 223, 231);
+}
+
+img{
+    height: 15vh;
+    max-width: 100%;
+    margin: 0 0 15px 130px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 5vh;
+    width: 25vw;
+    border: 2px solid rgb(14, 112, 144);
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+.search-icon{
+    color: rgb(3, 63, 83);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.movieplayer img{
+    margin: 40px 0 0 118px;
+    size: 500px;
+    height: 200px;
+    width: 200px;
+}
+
+.movie-card {
+    display: flex;            /* row layout: poster left, text right */
+    width: 600px;             /* wider for side-by-side */
+    min-height: 150px;
+    padding: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;         /* text aligned left */
+    gap: 20px;                /* space between poster and text */
+}
+
+.movie-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;   /* stack texts vertically */
+    justify-content: center;  /* vertically center text next to poster */
+}
+
+.movie-details h2 {
+    margin: 0 0 10px 0;
+}
+
+.movie-details p {
+    margin: 5px 0;
+}
+
+/* Optional: limit plot text height */
+.movie-details p.plot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;  /* max 6 lines for plot */
+    -webkit-box-orient: vertical;
+}
